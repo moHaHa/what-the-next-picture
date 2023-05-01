@@ -1,5 +1,7 @@
 button:
   about: About
+  gallery_mode: Gallery Mode
+  story_mode: Story Mode
   back: Back
   go: GO
   home: Home

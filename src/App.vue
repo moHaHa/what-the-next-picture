@@ -22,31 +22,8 @@ useHead({
     },
   ],
 })
-
-setInterval(async () => {
-  await fetch('https://source.unsplash.com/random/?space planets')
-    .then((response) => {
-      document.body.style.backgroundImage = `url('${response.url}')`
-    })
-    .catch((error) => {
-      console.error('Error:', error)
-    })
-}, 10000)
 </script>
 
 <template>
   <RouterView />
 </template>
-
-<style>
-body {
-  background-image: url('https://images.unsplash.com/photo-1624358731587-7b…medium=referral&utm_source=unsplash_source&w=1080');
-  background-position: center;
-  background-size: contain;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-repeat: no-repeat;
-}
-</style>
